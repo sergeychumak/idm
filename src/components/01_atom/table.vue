@@ -27,6 +27,7 @@ export default {
     }
   },
   mounted: function () {
+    /*
     this.$store.dispatch('actionA').then((response) => {
       let columns = []
       let rows = []
@@ -43,7 +44,8 @@ export default {
       rows.push(row)
 
       this.rows = rows
-    })
+
+    }) */
   }
 }
 </script>

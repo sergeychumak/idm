@@ -1,15 +1,8 @@
 import axios from 'axios'
 
-const state = {
-  tableData: {
-    columns: [],
-    rows: []
-  }
-}
+const state = {}
 
-const getters = {
-  tableData: state => state.tableData
-}
+const getters = {}
 
 const actions = {
   actionA ({ dispatch, commit }) {
@@ -27,14 +20,7 @@ const actions = {
   }
 }
 
-const mutations = {
-  someMutation (state, message) {
-    state.tableData.columns.push({ id: 'date', label: 'date' })
-    state.tableData.columns.push({ id: 'name', label: 'name' })
-    state.tableData.rows.push({ date: 'a1', name: 'b1' })
-    state.tableData.rows.push({ date: 'a1', name: 'b1' })
-  }
-}
+const mutations = {}
 
 export default {
   state,

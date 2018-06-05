@@ -1,13 +1,13 @@
 <template>
-  <div id="app">
-      <router-view/>
+  <div>
+    909
+    <b><slot name="top-bun">808</slot></b>
   </div>
 </template>
 
 <script>
-import './style/style.scss'
 export default {
-  name: 'App'
+  name: 'Test'
 }
 </script>
 

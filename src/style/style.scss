@@ -1,1 +1,66 @@
 @import "test/style.scss";
+
+
+
+.router-link-active {
+  color: #fff;
+}
+
+
+
+
+
+// GLOBAL
+.labelText_XL { font-size: 18px; }
+.labelText_L { font-size: 13px; }
+.labelText_S { font-size: 11px; }
+
+.itemListApplication {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding:10px;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    background: #ddf1fb;
+  }
+  &__folder {
+    background: #3148ff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5px;
+    margin: auto;
+  }
+  &__name { font-weight: bold; }
+  &__description {}
+  &__count {
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+}
+
+.itemApplication{
+  background: #fff;
+  margin: 10px -10px;
+  &__loader{
+    padding: 10px;
+  }
+  &__top{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  &__content{
+    padding: 10px;
+  }
+  &__bottom{
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+  }
+}

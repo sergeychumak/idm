@@ -1,21 +1,27 @@
 <template>
   <div>
-    test
-    <Table />
-    <Table />
-    <Table />
+    <div id="app__left" style="padding: 20px;">
+      <ul>
+        <router-link v-for="item in MENUDATA" :key="item.id" :to="item.url"><li>{{item.label}}</li></router-link>
+      </ul>
+      <router-link to="add_new_request">{{this.LANGDATA.CREATE_QUERY}}</router-link>
+    </div>
+    <div id="app__right" style="padding: 20px;">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
-
+import { mapGetters } from 'vuex'
 export default {
   name: 'Index',
-  components: {
-    Table: () => import('@/components/00_base/Table')
-  },
-  mounted: function () {
-    // console.log(this.$store.state.config.label)
+  mounted: function () {},
+  computed: {
+    ...mapGetters([
+      'LANGDATA',
+      'MENUDATA'
+    ])
   }
 }
 </script>

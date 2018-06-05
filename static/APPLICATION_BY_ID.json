@@ -1,0 +1,16 @@
+{
+  "name": "КИС Управление данными",
+  "description": "учет рабочего времени сотрудников ЦО, формирование заявок на пропуска для apучет рабочего времени сотрудников ЦО, формирование заявок на пропуска для ap",
+  "list": [
+    {"id":"a1","name":"test1", "matching": "Чумак и Бигриев"},
+    {"id":"a2","name":"test2", "selected":true},
+    {"id":"a3","name":"test3"},
+    {"id":"a4","name":"test4", "selected":true},
+    {"id":"a5","name":"test5", "selected":true},
+    {"id":"a6","name":"test6"},
+    {"id":"a7","name":"test7"}
+  ],
+  "user": {
+    "login":"SChumak"
+  }
+}
